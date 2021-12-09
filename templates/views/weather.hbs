@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tailwind Starter Template - App Landing Page Template: Tailwind Toolbox</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Font Awesome if you need it
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	-->
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+
+</head>
+
+
+<body class="leading-normal tracking-normal text-gray-900" style="font-family: 'Source Sans Pro', sans-serif;">
+    <div class="h-screen pb-14 bg-right bg-cover" style="background-image:url('/img/bg.svg');">
+        {{>header }}
+
+        <!--Main-->
+        <div class="container pt-24 md:pt-48 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+            <div class="main-content">
+                <p>Use this site to get your weather!</p>
+
+                <form>
+                    <input placeholder="Location">
+                    <button>Search</button>
+                </form>
+
+                <p id="message-1"></p>
+                <p id="message-2"></p>
+            </div>
+        </div>
+        <!--Footer-->
+        {{>footer }}
+    </div>
+    <!-- jQuery if you need it
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  -->
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
