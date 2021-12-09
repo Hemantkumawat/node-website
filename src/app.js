@@ -41,14 +41,12 @@ app.get('/products',(req,res)=>{
 })
 
 
-app.get('*',(req,res)=>{
-   res.status(404).render('404.hbs')
+app.get('/weather',(req,res)=>{
+    res.render('weather.hbs'); 
 })
 
 
-app.listen(port,()=>{
-    console.log('Server is up on port '+ port)
-})
+
 
 
 app.get('/get-weather', (req, res) => {
@@ -75,4 +73,12 @@ app.get('/get-weather', (req, res) => {
             })
         })
     })
+})
+
+app.get('*',(req,res)=>{
+    res.status(404).render('404.hbs')
+ })
+
+app.listen(port,()=>{
+    console.log('Server is up on port '+ port)
 })

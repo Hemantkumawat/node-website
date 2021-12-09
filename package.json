@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css",
-    "start":"node src/app.js"
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "hbs": "^4.2.0",
     "nodemon": "^2.0.15",
     "postcss-cli": "^9.0.2",
+    "request": "^2.88.2",
     "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
